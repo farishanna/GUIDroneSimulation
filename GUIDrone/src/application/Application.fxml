@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DroneInterface">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="save" mnemonicParsing="false" text="Save" />
+                  <MenuItem fx:id="loadArea" mnemonicParsing="false" text="Load Area" />
+                  <MenuItem fx:id="exit" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Canvas fx:id="canvas" height="512.0" width="512.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <VBox fx:id="vbox" prefHeight="574.0" prefWidth="299.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="l" />
+            <ScrollPane fx:id="scrollPane" prefHeight="574.0" prefWidth="299.0">
+               <content>
+                  <Label fx:id="l" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <HBox prefHeight="42.0" prefWidth="822.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="startAnimation" mnemonicParsing="false" prefHeight="36.0" prefWidth="145.0" text="Start" />
+            <Button fx:id="pauseAnimation" mnemonicParsing="false" prefHeight="36.0" prefWidth="145.0" text="Stop" />
+            <Button fx:id="addDrone" mnemonicParsing="false" prefHeight="36.0" prefWidth="145.0" text="Add Drone" />
+            <Button fx:id="addHealerDrone" mnemonicParsing="false" prefHeight="36.0" prefWidth="145.0" text="Add Healer Drone" />
+            <Button fx:id="addEnemyDrone" mnemonicParsing="false" prefHeight="36.0" prefWidth="145.0" text="Add Enemy Drone" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>
