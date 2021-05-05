@@ -2,6 +2,8 @@
 
 ## A GUI Drone Simulation using JavaFX libraries
 
+This project will need a JavaFx setup. This project was done on eclipse.
+
 The following application is a drone simulator where it shows a canvas screen where you can add multiple types of drones.
 There are three types of drones:
   1. A friendly drone: This drone just moves around the screen.
