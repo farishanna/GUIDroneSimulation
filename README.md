@@ -2,7 +2,7 @@
 
 ## A GUI Drone Simulation using JavaFX libraries
 
-This project will need a JavaFx setup. This project was done on eclipse.
+This project will need a JavaFx setup, including SceneBuilder. This project was done on eclipse.
 
 The following application is a drone simulator where it shows a canvas screen where you can add multiple types of drones.
 There are three types of drones:
